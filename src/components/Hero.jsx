@@ -4,6 +4,33 @@ import Slider from "./Slider";
 import Crousal from "../template/crousel";
 import FeatureCard from "./FeatureCard";
 import Box from "./Box";
+import Testimonal from "./Testimonal";
+import Faq from "./Faq";
+import Footer from "./Footer";
+import BlogCard from "./BlogCard";
+import blog1 from "../assets/blog1.avif";
+import blog2 from "../assets/blog2.avif";
+import blog3 from "../assets/blog3.avif";
+
+const items = [
+  {
+    image: blog1,
+    title: "What is CAC and how do I calculate it?",
+    badge: "ARTICLES",
+  },
+  {
+    image: blog2,
+    title:
+      "How you can use recurring revenue financing for faster growth without dilution",
+    badge: "CASE STUDIES",
+  },
+  {
+    image: blog3,
+    title: "Announcing Slang.ai’s $20M in funding",
+    badge: "FUNDING",
+  },
+];
+
 function Hero() {
   return (
     <div>
@@ -81,24 +108,49 @@ function Hero() {
       <Crousal />
       <FeatureCard />
       <Box />
-      <div className="">
-        <div className="stats">
+      <div className="py-20">
+        <div className="flex flex-col justify-center items-center">
+          <div className="badge bg-[#eaf2ff] py-3">
+            <p className="bg-gradient-to-r from-[#a15ee8] to-[#6d8dff] text-transparent bg-clip-text text-sm">
+              Metrices
+            </p>
+          </div>
+          <h1 className="text-center py-5 text-[24px] md:text-[48px] text-[#02015a]">
+            Numbers speaking for themselves
+          </h1>
+        </div>
+        <div className="stats flex flex-col md:flex-row md:px-32 md:mt-5 py-5">
           <div className="stat place-items-center">
-            <div className="stat-value">75%</div>
-            <div className="stat-desc">Candidate match rate</div>
+            <div className="stat-value text-[#573cff] text-[58px]">75%</div>
+            <div className="stat-desc text-[#5b637e] text-[20px] py-5">
+              Candidate match rate
+            </div>
           </div>
 
           <div className="stat place-items-center">
-            <div className="stat-value">4,000+</div>
-            <div className="stat-desc">Successful placement</div>
+            <div className="stat-value text-[#573cff] text-[58px]">4,000+</div>
+            <div className="stat-desc text-[#5b637e] text-[20px] py-5">
+              Successful placement
+            </div>
           </div>
 
           <div className="stat place-items-center">
-            <div className="stat-value">50+</div>
-            <div className="stat-desc">Operating countries</div>
+            <div className="stat-value text-[#573cff] text-[58px]">50+</div>
+            <div className="stat-desc text-[#5b637e] text-[20px] py-5">
+              Operating countries
+            </div>
           </div>
         </div>
       </div>
+      <Testimonal />
+      <Faq />
+      <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+      {items.map((item, index) => (
+         <BlogCard key={index} title={item.title} badge={item.badge} image={item.image}/>
+      ))}
+      </div>
+      <Box />
+      <Footer />
     </div>
   );
 }

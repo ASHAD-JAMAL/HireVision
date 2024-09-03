@@ -88,9 +88,13 @@ function Crousel() {
       <div className="max-w-screen-2xl container mx-auto my-10 mb-32">
         <div className="flex flex-col justify-center items-center md:px-0 space-y-4 md:space-y-8 px-2">
           <div className="badge bg-[#eaf2ff] py-3">
-            <p className="text-[rgb(124,127,248)] text-sm px-2 text-center">HOW IT WORKS</p>
+            <p className="bg-gradient-to-r from-[#a15ee8] to-[#6d8dff] text-transparent bg-clip-text text-sm">
+              How It Works
+            </p>
           </div>
-          <h1 className="md:text-[60px] text-2xl text-[#02015A] font-bold tracking-tighter font-sans text-center leading-tight">Easy implementation in <br /> three easy steps</h1>
+          <h1 className="md:text-[60px] text-2xl text-[#02015A] font-bold tracking-tighter font-sans text-center leading-tight">
+            Easy implementation in <br /> three easy steps
+          </h1>
           <p className="text-[#6a728d] text-[17px] text-center">
             Cutting-edge, user-friendly AI tool and growth analytics designed to
             boost user conversion, engagement, and retention.

@@ -54,7 +54,7 @@ function FeatureCard() {
         <div className="flex flex-col md:flex-row justify-between items-center gap-10">
           <div className="w-full md:w-1/2 px-4 md:px-8 space-y-5">
             <div className="badge bg-[#eaf2ff] py-3">
-              <p className="bg-gradient-to-r from-[#a15ee8] to-[#6d8dff] text-transparent bg-clip-text text-sm px-2 text-center">
+              <p className="bg-gradient-to-r from-[#a15ee8] to-[#6d8dff] text-transparent bg-clip-text text-sm">
                 Feature
               </p>
             </div>
@@ -83,7 +83,7 @@ function FeatureCard() {
         <div className="flex flex-col md:flex-row justify-between items-center gap-10 order-2">
           <div className="w-full md:w-1/2 px-4 md:px-8 space-y-5 md:order-2">
             <div className="badge bg-[#eaf2ff] py-3">
-              <p className="bg-gradient-to-r from-[#a15ee8] to-[#6d8dff] text-transparent bg-clip-text text-sm px-2 text-center">
+              <p className="bg-gradient-to-r from-[#a15ee8] to-[#6d8dff] text-transparent bg-clip-text text-sm">
                 Feature
               </p>
             </div>
@@ -112,7 +112,7 @@ function FeatureCard() {
         <div className="flex flex-col md:flex-row justify-between items-center gap-10">
           <div className="w-full md:w-1/2 px-4 md:px-8 space-y-5">
             <div className="badge bg-[#eaf2ff] py-3">
-              <p className="bg-gradient-to-r from-[#a15ee8] to-[#6d8dff] text-transparent bg-clip-text text-sm px-2 text-center">
+              <p className="bg-gradient-to-r from-[#a15ee8] to-[#6d8dff] text-transparent bg-clip-text text-sm">
                 Feature
               </p>
             </div>
@@ -141,9 +141,9 @@ function FeatureCard() {
         {/* includes section  */}
         <div>
           <div className="flex flex-col justify-center items-center py-14 text-center md:space-y-9 space-y-4">
-            <div className="badge bg-[#eaf2ff]">
-              <p className="bg-gradient-to-r from-[#a15ee8] to-[#6d8dff] text-transparent bg-clip-text text-sm px-2 text-center">
-                Feature
+            <div className="badge bg-[#eaf2ff] py-3">
+              <p className="bg-gradient-to-r from-[#a15ee8] to-[#6d8dff] text-transparent bg-clip-text text-sm">
+                INCLUDED
               </p>
             </div>
             <h1 className="md:text-[60px] text-2xl text-[#02015A] font-bold leading-tight">
