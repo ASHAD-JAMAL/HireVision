@@ -112,7 +112,7 @@ function Hero() {
         <div className="flex flex-col justify-center items-center">
           <div className="badge bg-[#eaf2ff] py-3">
             <p className="bg-gradient-to-r from-[#a15ee8] to-[#6d8dff] text-transparent bg-clip-text text-sm">
-              Metrices
+              METRICES
             </p>
           </div>
           <h1 className="text-center py-5 text-[24px] md:text-[48px] text-[#02015a]">
@@ -144,10 +144,27 @@ function Hero() {
       </div>
       <Testimonal />
       <Faq />
-      <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-      {items.map((item, index) => (
-         <BlogCard key={index} title={item.title} badge={item.badge} image={item.image}/>
-      ))}
+      <div>
+        <div className="flex flex-col justify-center items-center mt-10">
+          <div className="badge bg-[#eaf2ff] py-3">
+            <p className="bg-gradient-to-r from-[#a15ee8] to-[#6d8dff] text-transparent bg-clip-text text-sm">
+              BLOG
+            </p>
+          </div>
+          <h1 className="text-center py-5 text-[24px] md:text-[48px] text-[#02015a]">
+            From our Blog
+          </h1>
+        </div>
+        <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+          {items.map((item, index) => (
+            <BlogCard
+              key={index}
+              title={item.title}
+              badge={item.badge}
+              image={item.image}
+            />
+          ))}
+        </div>
       </div>
       <Box />
       <Footer />

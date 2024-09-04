@@ -3,8 +3,8 @@ import React from "react";
 function BlogCard({ image, title, badge }) {
   return (
     <>
-      <div className="max-w-screen-2xl container mx-auto md:px-20 px-4">
-        <div className="card w-96">
+      <div className="w-full mx-auto md:px-20 px-4">
+        <div className="card w-auto">
           <figure>
             <img
               src={image}
@@ -12,9 +12,9 @@ function BlogCard({ image, title, badge }) {
               className="w-full h-48 object-cover"
             />
           </figure>
-          <div className="card-body">
-            <div className="badge badge-secondary">{badge}</div>
-            <p>{title}</p>
+          <div className="px-1 py-3">
+            <div className="badge bg-[#d9ffd8] text-[#0000fe] font-sans">{badge}</div>
+            <p className="text-[30px] font-sans font-bold text-[#02015a]">{title}</p>
           </div>
         </div>
       </div>
