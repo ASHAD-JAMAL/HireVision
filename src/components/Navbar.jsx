@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import logo from "../assets/logo.svg";
 import { useLocation, NavLink } from "react-router-dom";
 import { MdArrowOutward } from "react-icons/md";
-
+import { IoMdClose } from "react-icons/io";
 function Navbar() {
   const [navbarBg, setNavbarBg] = useState(false);
   const [isOpen, setIsOpen] = useState(false); // State for hamburger menu open/close
@@ -121,47 +121,32 @@ function Navbar() {
         </div>
         <div className="navbar-end lg:hidden">
           <button onClick={toggleNavbar} className="btn btn-ghost">
-            {isOpen ? (
-              // Close icon when menu is open
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-6 w-6 text-black bg-red-900" // Adjust color as needed
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M6 18L18 6M6 6l12 12"
-                />
-              </svg>
-            ) : (
-              // Hamburger icon when menu is closed
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-6 w-6 text-black" // Adjust color as needed
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M4 6h16M4 12h16M4 18h16"
-                />
-              </svg>
-            )}
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-6 w-6 text-black" // Adjust color as needed
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
           </button>
         </div>
         {/* Mobile Navbar */}
         <div
-          className={`lg:hidden fixed top-0 left-0 w-full bg-white py-4 px-6 duration-300 z-40 ${
+          className={`lg:hidden fixed top-0 left-0 w-full bg-white py-4 px-6 duration-300 z-40  ${
             isOpen ? "translate-y-0" : "-translate-y-full"
           }`}
         >
+          <IoMdClose
+            className="text-3xl text-black z-[30] absolute top-[20px] right-[30px] cursor-pointer"
+            onClick={toggleNavbar}
+          />
           <ul className="flex flex-col space-y-4">{navItems}</ul>
         </div>
         {/* Desktop Navbar */}

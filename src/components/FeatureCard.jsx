@@ -51,7 +51,7 @@ const items = [
 function FeatureCard() {
   return (
     <>
-      <div className="max-w-screen-2xl mx-auto px-4 md:px-8 lg:px-40 my-10 md:space-y-40 space-y-10 bg-[#fff]">
+      <div className="max-w-screen-2xl mx-auto px-4 md:px-8 lg:px-40 py-10 md:space-y-40 space-y-10 bg-[#fff]">
         {/* Feature Sections */}
         {[img1, img2, img3].map((img, index) => (
           <div
