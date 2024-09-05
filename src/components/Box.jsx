@@ -1,4 +1,5 @@
 import React from "react";
+import { MdArrowOutward } from "react-icons/md";
 
 function Box() {
   return (
@@ -18,10 +19,12 @@ function Box() {
               market.
             </p>
           </div>
-          <div className="mt-8 md:mt-0 md:flex-none md:w-auto">
-            <button className="text-[14px] sm:text-[16px] px-4 sm:px-5 py-2 sm:py-3 text-[rgb(87,60,255)] font-semibold bg-white rounded-lg">
-              Duplicate In Framer{" "}
-              <span className="text-[16px] sm:text-[18px]">↗</span>
+          <div className="w-fit mx-auto">
+            <button className="flex md:text-lg text-sm px-4 sm:px-5 py-2 sm:py-3  text-[#573cff] bg-white rounded-lg hover:duration-300 items-center gap-3 group font-semibold">
+              <p className="group-hover:-translate-x-1 duration-300">
+                Dupluicate In Framer
+              </p>
+              <MdArrowOutward className="text-[20px] sm:text-[22px] group-hover:translate-x-1 duration-300" />
             </button>
           </div>
         </div>

@@ -7,7 +7,8 @@ import { PiAnchor } from "react-icons/pi";
 import { TbHandClick } from "react-icons/tb";
 import { SiCitrix } from "react-icons/si";
 import { FaCookieBite } from "react-icons/fa6";
-
+import { MdArrowOutward } from "react-icons/md";
+import { Link } from "react-router-dom";
 const items = [
   {
     title: "Find Your Perfect Fit",
@@ -77,10 +78,15 @@ function FeatureCard() {
                 experience, and skills, ensuring you focus on the most promising
                 candidates first.
               </p>
-              <div className="px-4 sm:px-0 sm:space-x-5 flex flex-col sm:flex-row space-y-3 sm:space-y-0 sm:w-auto w-full">
-                <button className="text-base md:text-lg px-5 py-3 border border-[rgb(0,0,254)] hover:text-white text-[rgb(0,0,254)] font-semibold hover:bg-[rgb(0,0,254)] rounded-lg duration-300">
-                  Request Demo <span className="text-lg">↗</span>
-                </button>
+              <div className="w-fit mt-8">
+                <Link to="https://andrea-montini.lemonsqueezy.com/buy/f4da987f-2be5-4c3c-b2b2-9a5df3121631?discount=0">
+                  <button className="flex md:text-lg text-sm px-4 sm:px-5 py-2 sm:py-3 border border-[#573cff] hover:border-none  text-[#573cff] bg-white hover:bg-[#573cff] hover:text-white rounded-lg hover:duration-1000 items-center gap-3 group">
+                    <p className="group-hover:-translate-x-1 duration-300">
+                      Request Demo
+                    </p>
+                    <MdArrowOutward className="text-[20px] sm:text-[22px] group-hover:translate-x-1 duration-300" />
+                  </button>
+                </Link>
               </div>
             </div>
             <div className="w-full md:w-1/2 px-4 md:px-8">
@@ -110,10 +116,7 @@ function FeatureCard() {
           </div>
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {items.map((item, index) => (
-              <div
-                key={index}
-                className="card bg-white p-6 rounded-lg"
-              >
+              <div key={index} className="card bg-white p-6 rounded-lg">
                 <div className="card-body flex flex-col items-center text-center space-y-4">
                   <div className="bg-[#4b53ff] p-4 rounded-full text-white text-3xl">
                     {item.icon}
