@@ -9,7 +9,7 @@ function Faq() {
 
   return (
     <>
-      <div className="max-w-screen-2xl flex flex-col justify-center items-center space-y-3 md:py-32 md:px-0 px-4">
+      <div className="max-w-screen-2xl flex flex-col justify-center items-center space-y-3 md:py-32 md:px-0 px-4 bg-white">
         <div className="flex flex-col justify-center items-center my-8">
           <div className="badge bg-[#fff] py-3">
             <p className="bg-gradient-to-r from-[#a15ee8] to-[#6d8dff] text-transparent bg-clip-text text-sm">
