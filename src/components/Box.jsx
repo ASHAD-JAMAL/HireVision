@@ -4,7 +4,7 @@ import { MdArrowOutward } from "react-icons/md";
 function Box() {
   return (
     <>
-      <div className="max-w-screen-2xl mx-auto px-4 md:px-20 lg:px-40 my-10 space-y-10 md:mt-60">
+      <div className="max-w-screen-2xl mx-auto px-4 md:px-20 lg:px-40 my-10 space-y-10 md:mt-60 bg-[#fff]">
         <div className="bg-gradient-to-r from-[#573cff] to-[#557aff] rounded-2xl opacity-100 py-10 sm:py-14 md:py-16 px-6 sm:px-8 md:px-16 flex flex-col md:flex-row md:items-center">
           <div className="flex-1">
             <h2 className="text-[24px] sm:text-[28px] md:text-[40px] text-white font-bold font-sans leading-tight">
