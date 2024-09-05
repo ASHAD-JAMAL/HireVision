@@ -33,7 +33,7 @@ const items = [
 
 function Hero() {
   return (
-    <div>
+    <div className="bg-white">
       <Navbar />
       <div className="w-full relative overflow-x-hidden">
         <div className="absolute md:flex z-[3] hidden">
@@ -119,7 +119,7 @@ function Hero() {
             Numbers speaking for themselves
           </h1>
         </div>
-        <div className="stats flex flex-col md:flex-row md:px-32 md:mt-5 py-5">
+        <div className="stats flex flex-col md:flex-row md:px-32 md:mt-5 py-5 bg-white">
           <div className="stat place-items-center">
             <div className="stat-value text-[#573cff] text-[58px]">75%</div>
             <div className="stat-desc text-[#5b637e] text-[20px] py-5">
