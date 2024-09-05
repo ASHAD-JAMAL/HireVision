@@ -79,13 +79,13 @@ function ParallaxText({ baseVelocity = 100 }) {
 function Crousel() {
   return (
     <>
-      <section>
+      <section className="bg-white">
         <h5 className="text-[#9ea4b5] text-[28px] text-center mt-2">
           Already chosen by the world leaders
         </h5>
         <ParallaxText baseVelocity={-6} />
       </section>
-      <div className="max-w-screen-2xl container mx-auto my-10 mb-32">
+      <div className="max-w-screen-2xl container mx-auto my-10 mb-32 bg-white">
         <div className="flex flex-col justify-center items-center md:px-0 space-y-4 md:space-y-8 px-2">
           <div className="badge bg-[#eaf2ff] py-3">
             <p className="bg-gradient-to-r from-[#a15ee8] to-[#6d8dff] text-transparent bg-clip-text text-sm">

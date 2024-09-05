@@ -3,7 +3,7 @@ import React from "react";
 function BlogCard({ image, title, badge, date }) {
   return (
     <>
-      <div className="w-full mx-auto md:px-20 px-4">
+      <div className="w-full mx-auto md:px-20 px-4 bg-white">
         <div className="card w-auto">
           <figure>
             <img

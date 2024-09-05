@@ -50,7 +50,7 @@ const items = [
 function BlogHome() {
   return (
     <>
-      <div>
+      <div className="bg-white">
         <div className="h-full relative flex flex-col justify-center items-center space-y-8 bg-white py-36">
           <div className="sm:w-1/2 text-center px-4 sm:px-0">
             <div className="badge bg-[#fff] py-3">
