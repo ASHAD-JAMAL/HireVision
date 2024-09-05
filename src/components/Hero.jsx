@@ -108,7 +108,7 @@ function Hero() {
       <Crousal />
       <FeatureCard />
       <Box />
-      <div className="py-20">
+      <div className="py-20 bg-white">
         <div className="flex flex-col justify-center items-center">
           <div className="badge bg-[#eaf2ff] py-3">
             <p className="bg-gradient-to-r from-[#a15ee8] to-[#6d8dff] text-transparent bg-clip-text text-sm">
