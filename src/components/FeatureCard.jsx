@@ -9,6 +9,7 @@ import { SiCitrix } from "react-icons/si";
 import { FaCookieBite } from "react-icons/fa6";
 import { MdArrowOutward } from "react-icons/md";
 import { Link } from "react-router-dom";
+import Box from "./Box";
 const items = [
   {
     title: "Find Your Perfect Fit",
@@ -130,6 +131,7 @@ function FeatureCard() {
             ))}
           </div>
         </div>
+        <Box/>
       </div>
     </>
   );

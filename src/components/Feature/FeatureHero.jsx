@@ -3,7 +3,7 @@ import React from "react";
 function FeatureHero() {
   return (
     <>
-      <div>
+      <div className="bg-white">
         <div className="w-full relative overflow-x-hidden">
           <div className="absolute md:flex z-[3] hidden">
             <div className="bg-[#f8ff37] h-[200px] w-[400px] rounded-full blur-[76px]"></div>

@@ -6,6 +6,7 @@ import b3 from "../../assets/b3.avif";
 import b4 from "../../assets/b4.avif";
 import b5 from "../../assets/b5.avif";
 import b6 from "../../assets/b6.avif";
+import BlogBox from "./BlogBox";
 
 const items = [
   {
@@ -80,6 +81,7 @@ function BlogHome() {
             />
           ))}
         </div>
+        <BlogBox/>
       </div>
     </>
   );

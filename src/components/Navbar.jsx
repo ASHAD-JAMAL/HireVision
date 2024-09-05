@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import logo from "../assets/logo.svg";
-import { FaArrowRightLong } from "react-icons/fa6";
 import { useLocation, NavLink } from "react-router-dom";
 import { MdArrowOutward } from "react-icons/md";
 import { Link } from "react-router-dom";
@@ -129,7 +128,7 @@ function Navbar() {
             </div>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+              className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow space-y-2 bg-white"
             >
               {navItems}
             </ul>
@@ -139,22 +138,6 @@ function Navbar() {
         <div className="navbar-center hidden lg:flex">
           <ul className="flex space-x-10 ml-60">{navItems}</ul>
         </div>
-        {/* <div className="navbar-end hidden lg:flex justify-end w-full">
-          <button
-            className={`flex items-center no-animation px-5 py-3 border border-white text-white rounded-lg text-[15px] hover:bg-[rgb(87,60,255)] group-hover:border-[rgb(87,60,255)] group-hover:text-[#02015a] duration-300 ${
-              location.pathname === "/blog"
-            ? "border-blue-900 text-blue-900 hover:text-white"
-              :location.pathname === "/contact"
-              ? "border-blue-900 text-blue-900 hover:text-white"
-              :navbarBg
-                ? "lg:border-[rgb(87,60,255)] lg:text-[rgb(87,60,255)]"
-                : ""
-            }`}
-          >
-            <p>Duplicate in Framer</p>
-            <FaArrowRightLong className="ml-2 text-[20px] sm:text-[22px] hover:translate-x-1 duration-300" />
-          </button>
-        </div> */}
         <div className="navbar-end hidden lg:flex justify-end w-full">
           <Link to="https://andrea-montini.lemonsqueezy.com/buy/f4da987f-2be5-4c3c-b2b2-9a5df3121631?discount=0">
             <button className={`flex items-center no-animation px-5 py-3 border border-white text-white rounded-lg text-[15px] hover:bg-[rgb(87,60,255)] group-hover:border-[rgb(87,60,255)] group-hover:text-[#02015a] duration-300 group ${

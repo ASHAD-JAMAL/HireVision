@@ -45,7 +45,7 @@ function Testimonial() {
   useIntersectionObserver(line1Ref, true, 0.25);
 
   return (
-    <div className="flex flex-col justify-center items-center bg-[#f3f7fb] sm:py-10 py-10 px-4 md:px-0">
+    <div className="flex flex-col justify-center items-center bg-[#f3f7fb] px-4 md:px-0">
       <div className="md:py-5 py-6 flex flex-col justify-center items-center space-y-4">
         <div className="badge bg-[#fff] py-4">
           <p className="bg-gradient-to-r from-[#a15ee8] to-[#6d8dff] text-transparent bg-clip-text text-xs sm:text-sm">
