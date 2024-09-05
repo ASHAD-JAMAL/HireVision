@@ -5,15 +5,12 @@ import { MdArrowOutward } from "react-icons/md";
 
 function Navbar() {
   const [navbarBg, setNavbarBg] = useState(false);
+  const [isOpen, setIsOpen] = useState(false); // State for hamburger menu open/close
   const location = useLocation(); // Get current route
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 50) {
-        setNavbarBg(true);
-      } else {
-        setNavbarBg(false);
-      }
+      setNavbarBg(window.scrollY > 50);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -22,6 +19,14 @@ function Navbar() {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
+  const toggleNavbar = () => {
+    setIsOpen(!isOpen);
+  };
+
+  const closeNavbar = () => {
+    setIsOpen(false);
+  };
 
   const navItems = (
     <>
@@ -40,6 +45,7 @@ function Navbar() {
               : "lg:text-[#fff]"
           }`
         }
+        onClick={closeNavbar}
       >
         Features
       </NavLink>
@@ -58,6 +64,7 @@ function Navbar() {
               : "lg:text-[#fff]"
           }`
         }
+        onClick={closeNavbar}
       >
         Pricing
       </NavLink>
@@ -74,6 +81,7 @@ function Navbar() {
               : "lg:text-[#fff]"
           }`
         }
+        onClick={closeNavbar}
       >
         Contact
       </NavLink>
@@ -90,6 +98,7 @@ function Navbar() {
               : "lg:text-[#fff]"
           }`
         }
+        onClick={closeNavbar}
       >
         Blog
       </NavLink>
@@ -100,19 +109,23 @@ function Navbar() {
     <div
       className={`max-w-screen-2xl container mx-auto md:px-20 px-4 fixed top-0 left-0 right-0 z-50 py-2 duration-500 ${
         location.pathname === "/contact"
-          ? "lg:bg-white" // Set background to white on /contact
+          ? "bg-white" // Set background to white on /contact
           : navbarBg
-          ? "lg:bg-[#eff2fb]"
-          : "lg:bg-transparent"
+          ? "bg-[#eff2fb]"
+          : "bg-transparent"
       }`}
     >
-      <div className="navbar group bg-transparent">
+      <div className="navbar flex items-center justify-between">
         <div className="navbar-start">
-          <div className="dropdown">
-            <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
+          <img src={logo} alt="Logo" className="w-auto" />
+        </div>
+        <div className="navbar-end lg:hidden">
+          <button onClick={toggleNavbar} className="btn btn-ghost">
+            {isOpen ? (
+              // Close icon when menu is open
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5"
+                className="h-6 w-6 text-black bg-red-900" // Adjust color as needed
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -121,23 +134,41 @@ function Navbar() {
                   strokeLinecap="round"
                   strokeLinejoin="round"
                   strokeWidth="2"
-                  d="M4 6h16M4 12h8m-8 6h16"
+                  d="M6 18L18 6M6 6l12 12"
                 />
               </svg>
-            </div>
-            <ul
-              tabIndex={0}
-              className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow space-y-2"
-            >
-              {navItems}
-            </ul>
-          </div>
-          <img src={logo} alt="Logo" />
+            ) : (
+              // Hamburger icon when menu is closed
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-6 w-6 text-black" // Adjust color as needed
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+              </svg>
+            )}
+          </button>
         </div>
-        <div className="navbar-center hidden lg:flex">
+        {/* Mobile Navbar */}
+        <div
+          className={`lg:hidden fixed top-0 left-0 w-full bg-white py-4 px-6 duration-300 z-40 ${
+            isOpen ? "translate-y-0" : "-translate-y-full"
+          }`}
+        >
+          <ul className="flex flex-col space-y-4">{navItems}</ul>
+        </div>
+        {/* Desktop Navbar */}
+        <div className="hidden lg:flex">
           <ul className="flex space-x-10 ml-60">{navItems}</ul>
         </div>
-        <div className="navbar-end hidden lg:flex justify-end w-full">
+        <div className="hidden lg:flex navbar-end justify-end w-full">
           <a
             href="https://andrea-montini.lemonsqueezy.com/buy/f4da987f-2be5-4c3c-b2b2-9a5df3121631?discount=0"
             target="_blank"
