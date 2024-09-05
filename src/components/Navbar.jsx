@@ -30,14 +30,14 @@ function Navbar() {
         className={({ isActive }) =>
           `text-[16px] font-bold hover:text-[#573cff] ${
             location.pathname === "/blog"
-              ? "text-black"
+              ? "lg:text-black"
               : location.pathname === "/contact"
-              ? "text-black"
+              ? "lg:text-black"
               : isActive
-              ? "text-blue-500"
+              ? "lg:text-blue-500"
               : navbarBg
-              ? "text-[#02015a]"
-              : "text-[#fff]"
+              ? "lg:text-[#02015a]"
+              : "lg:text-[#fff]"
           }`
         }
       >
@@ -48,14 +48,14 @@ function Navbar() {
         className={({ isActive }) =>
           `text-[16px] font-bold hover:text-[#573cff] ${
             location.pathname === "/blog"
-              ? "text-black"
+              ? "lg:text-black"
               : location.pathname === "/contact"
-              ? "text-black"
+              ? "lg:text-black"
               : isActive
-              ? "text-blue-500"
+              ? "lg:text-blue-500"
               : navbarBg
-              ? "text-[#02015a]"
-              : "text-[#fff]"
+              ? "lg:text-[#02015a]"
+              : "lg:text-[#fff]"
           }`
         }
       >
@@ -66,12 +66,12 @@ function Navbar() {
         className={({ isActive }) =>
           `text-[16px] font-bold hover:text-[#573cff] ${
             location.pathname === "/blog"
-              ? "text-black"
+              ? "lg:text-black"
               : location.pathname === "/contact" || isActive
-              ? "text-blue-500"
+              ? "lg:text-blue-500"
               : navbarBg
-              ? "text-[#02015a]"
-              : "text-[#fff]"
+              ? "lg:text-[#02015a]"
+              : "lg:text-[#fff]"
           }`
         }
       >
@@ -82,12 +82,12 @@ function Navbar() {
         className={({ isActive }) =>
           `text-[16px] font-bold hover:text-[#573cff] ${
             location.pathname === "/contact"
-              ? "text-black"
+              ? "lg:text-black"
               : isActive
               ? "text-blue-500"
               : navbarBg
-              ? "text-[#02015a]"
-              : "text-[#fff]"
+              ? "lg:text-[#02015a]"
+              : "lg:text-[#fff]"
           }`
         }
       >
@@ -100,10 +100,10 @@ function Navbar() {
     <div
       className={`max-w-screen-2xl container mx-auto md:px-20 px-4 fixed top-0 left-0 right-0 z-50 py-2 duration-500 ${
         location.pathname === "/contact"
-          ? "bg-white" // Set background to white on /contact
+          ? "lg:bg-white" // Set background to white on /contact
           : navbarBg
-          ? "bg-[#eff2fb]"
-          : "bg-transparent"
+          ? "lg:bg-[#eff2fb]"
+          : "lg:bg-transparent"
       }`}
     >
       <div className="navbar group bg-transparent">
