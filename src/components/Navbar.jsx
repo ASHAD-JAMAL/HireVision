@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import logo from "../assets/logo.svg";
 import { useLocation, NavLink } from "react-router-dom";
 import { MdArrowOutward } from "react-icons/md";
-import { Link } from "react-router-dom";
 
 function Navbar() {
   const [navbarBg, setNavbarBg] = useState(false);
@@ -29,7 +28,7 @@ function Navbar() {
       <NavLink
         to="/feature"
         className={({ isActive }) =>
-          `text-[16px] font-bold hover:text-[#573cff] group-hover:text-[#573cff] ${
+          `text-[16px] font-bold hover:text-[#573cff] ${
             location.pathname === "/blog"
               ? "text-black"
               : location.pathname === "/contact"
@@ -47,7 +46,7 @@ function Navbar() {
       <NavLink
         to="/pricing"
         className={({ isActive }) =>
-          `text-[16px] font-bold hover:text-[#573cff] group-hover:text-[#573cff] ${
+          `text-[16px] font-bold hover:text-[#573cff] ${
             location.pathname === "/blog"
               ? "text-black"
               : location.pathname === "/contact"
@@ -65,7 +64,7 @@ function Navbar() {
       <NavLink
         to="/contact"
         className={({ isActive }) =>
-          `text-[16px] font-bold hover:text-[#573cff] group-hover:text-[#573cff] ${
+          `text-[16px] font-bold hover:text-[#573cff] ${
             location.pathname === "/blog"
               ? "text-black"
               : location.pathname === "/contact" || isActive
@@ -81,7 +80,7 @@ function Navbar() {
       <NavLink
         to="/blog"
         className={({ isActive }) =>
-          `text-[16px] font-bold hover:text-[#573cff] group-hover:text-[#573cff] ${
+          `text-[16px] font-bold hover:text-[#573cff] ${
             location.pathname === "/contact"
               ? "text-black"
               : isActive
@@ -99,7 +98,7 @@ function Navbar() {
 
   return (
     <div
-      className={`max-w-screen-2xl container mx-auto md:px-20 px-4 fixed top-0 left-0 right-0 z-50 py-2  hover:bg-[#fff] duration-500 ${
+      className={`max-w-screen-2xl container mx-auto md:px-20 px-4 fixed top-0 left-0 right-0 z-50 py-2 duration-500 ${
         location.pathname === "/contact"
           ? "bg-white" // Set background to white on /contact
           : navbarBg
@@ -128,7 +127,7 @@ function Navbar() {
             </div>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow space-y-2 bg-white"
+              className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow space-y-2"
             >
               {navItems}
             </ul>
@@ -139,22 +138,27 @@ function Navbar() {
           <ul className="flex space-x-10 ml-60">{navItems}</ul>
         </div>
         <div className="navbar-end hidden lg:flex justify-end w-full">
-          <Link to="https://andrea-montini.lemonsqueezy.com/buy/f4da987f-2be5-4c3c-b2b2-9a5df3121631?discount=0">
-            <button className={`flex items-center no-animation px-5 py-3 border border-white text-white rounded-lg text-[15px] hover:bg-[rgb(87,60,255)] group-hover:border-[rgb(87,60,255)] group-hover:text-[#02015a] duration-300 group ${
-              location.pathname === "/blog"
-            ? "border-blue-900 text-blue-900 hover:text-white"
-              :location.pathname === "/contact"
-              ? "border-blue-900 text-blue-900 hover:text-white"
-              :navbarBg
-                ? "lg:border-[rgb(87,60,255)] lg:text-[rgb(87,60,255)]"
-                : ""
-            }`}>
+          <a
+            href="https://andrea-montini.lemonsqueezy.com/buy/f4da987f-2be5-4c3c-b2b2-9a5df3121631?discount=0"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button
+              className={`flex items-center px-5 py-3 border rounded-lg text-[15px] duration-300 ${
+                location.pathname === "/blog" ||
+                location.pathname === "/contact"
+                  ? "border-blue-900 text-blue-900 hover:bg-blue-900 hover:text-white"
+                  : navbarBg
+                  ? "border-[rgb(87,60,255)] text-[rgb(87,60,255)] hover:bg-[rgb(87,60,255)] hover:text-white"
+                  : "border-white text-white hover:bg-[rgb(87,60,255)]"
+              }`}
+            >
               <p className="group-hover:-translate-x-1 duration-300 text-lg">
                 Duplicate in Framer
               </p>
               <MdArrowOutward className="text-[20px] sm:text-[22px] group-hover:translate-x-1 duration-300" />
             </button>
-          </Link>
+          </a>
         </div>
       </div>
     </div>

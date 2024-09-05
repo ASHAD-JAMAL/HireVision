@@ -3,6 +3,7 @@ import Navbar from '../Navbar'
 import FeatureCard from '../FeatureCard'
 import Footer from '../Footer'
 import FeatureHero from './FeatureHero'
+import Box from '../Box'
 
 function Feature() {
   return (
@@ -10,6 +11,7 @@ function Feature() {
     <Navbar/>
     <FeatureHero/>
     <FeatureCard/>
+    <Box/>
     <Footer/>
     </>
   )
