@@ -8,7 +8,7 @@ function TimeLine() {
         <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
           <li className="h-48">
             <div className="timeline-middle flex justify-center items-center h-12 w-12 rounded-full border border-black">
-              <p className="text-center">
+              <p className="text-center text-black">
                 <FaArrowDown />
               </p>
             </div>
@@ -17,7 +17,7 @@ function TimeLine() {
           <li>
             <hr />
             <div className="timeline-middle flex justify-center items-center h-12 w-12 rounded-full border border-black">
-              <p className="text-center">01</p>
+              <p className="text-center text-black">01</p>
             </div>
             <div className="timeline-end mb-10 bg-[#181716] text-white p-8 rounded-lg md:w-1/2">
               <div className="text-lg text-[#837766]">iMac</div>
@@ -31,7 +31,7 @@ function TimeLine() {
           <li>
             <hr />
             <div className="timeline-middle flex justify-center items-center h-12 w-12 rounded-full border border-black">
-              <p className="text-center">02</p>
+              <p className="text-center text-black">02</p>
             </div>
             <div className="timeline-start mb-10 bg-[#181716] text-white p-8 rounded-lg md:w-1/2">
               <div className="text-lg text-[#837766]">iPod</div>
@@ -48,7 +48,7 @@ function TimeLine() {
           <li>
             <hr />
             <div className="timeline-middle flex justify-center items-center h-12 w-12 rounded-full border border-black">
-              <p className="text-center">03</p>
+              <p className="text-center text-black">03</p>
             </div>
             <div className="timeline-end mb-10 bg-[#181716] text-white p-8 rounded-lg md:w-1/2">
               <div className="text-lg text-[#837766]">iPhone</div>
@@ -65,7 +65,7 @@ function TimeLine() {
           <li>
             <hr />
             <div className="timeline-middle flex justify-center items-center h-12 w-12 rounded-full border border-black">
-              <p className="text-center">04</p>
+              <p className="text-center text-black">04</p>
             </div>
             <div className="timeline-start mb-10 bg-[#181716] text-white p-8 rounded-lg md:w-1/2">
               <div className="text-lg text-[#837766]">Apple Watch</div>

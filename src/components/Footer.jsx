@@ -3,7 +3,7 @@ import React from "react";
 function Footer() {
   return (
     <>
-      <div className="max-w-screen-2xl mx-auto px-4 md:px-20 lg:px-40 bg-white">
+      <div className="max-w-screen-2xl mx-auto px-4 md:px-20 lg:px-40 bg-white dark:bg-slate-900 dark:text-white">
         <footer className="flex flex-col md:flex-row justify-between items-start py-16 px-6 sm:px-12 lg:px-20 space-y-8 md:space-y-0">
           <aside className="flex-shrink-0 order-2 md:order-1 py-5 md:py-0">
             <svg
