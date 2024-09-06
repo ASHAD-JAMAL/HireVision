@@ -11,6 +11,7 @@ import BlogCard from "./BlogCard";
 import blog1 from "../assets/blog1.avif";
 import blog2 from "../assets/blog2.avif";
 import blog3 from "../assets/blog3.avif";
+import TimeLine from "./TimeLine";
 
 const items = [
   {
@@ -65,25 +66,25 @@ function Hero() {
               recruitment procedures.
             </p>
           </div>
-          <div className="flex items-center">
-            <div className="avatar-group -space-x-6 rtl:space-x-reverse">
+          <div className="flex items-center gap-2">
+            <div className="avatar-group -space-x-6 rtl:space-x-reverse py-10">
               <div className="avatar hover:-translate-y-1">
-                <div className="w-10 h-10">
+                <div className="w-10 h-10 cursor-pointer">
                   <img src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
                 </div>
               </div>
               <div className="avatar hover:-translate-y-1">
-                <div className="w-10 h-10">
+                <div className="w-10 h-10 cursor-pointer">
                   <img src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
                 </div>
               </div>
               <div className="avatar hover:-translate-y-1">
-                <div className="w-10 h-10">
+                <div className="w-10 h-10 cursor-pointer">
                   <img src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
                 </div>
               </div>
               <div className="avatar hover:-translate-y-1">
-                <div className="w-10 h-10">
+                <div className="w-10 h-10 cursor-pointer">
                   <img src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
                 </div>
               </div>
@@ -143,6 +144,7 @@ function Hero() {
         </div>
       </div>
       <Testimonal />
+      <TimeLine/>
       <Faq />
       <div>
         <div className="flex flex-col justify-center items-center mt-10">

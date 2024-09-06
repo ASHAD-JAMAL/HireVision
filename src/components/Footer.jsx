@@ -42,30 +42,30 @@ function Footer() {
               <h6 className="footer-title font-bold text-[#02015a] md:pt-0 pt-3">
                 Resources
               </h6>
-              <a className="link link-hover text[#9fa6bf] hover:text-[#02015a]">About us</a>
-              <a className="link link-hover text[#9fa6bf] hover:text-[#02015a]">Contact</a>
-              <a className="link link-hover text[#9fa6bf] hover:text-[#02015a]">Jobs</a>
-              <a className="link link-hover text[#9fa6bf] hover:text-[#02015a]">Press kit</a>
+              <a className="link link-hover text-black hover:text-[#02015a]">About us</a>
+              <a className="link link-hover text-black hover:text-[#02015a]">Contact</a>
+              <a className="link link-hover text-black hover:text-[#02015a]">Jobs</a>
+              <a className="link link-hover text-black hover:text-[#02015a]">Press kit</a>
             </div>
             <div className="flex flex-col space-y-2 md:space-y-4">
               <h6 className="footer-title font-bold text-[#02015a]  md:pt-0 pt-3">Company</h6>
-              <a className="link link-hover text[#9fa6bf] hover:text-[#02015a]">Terms of use</a>
-              <a className="link link-hover text[#9fa6bf] hover:text-[#02015a]">Privacy policy</a>
-              <a className="link link-hover text[#9fa6bf] hover:text-[#02015a]">Cookie policy</a>
+              <a className="link link-hover text-black hover:text-[#02015a]">Terms of use</a>
+              <a className="link link-hover text-black hover:text-[#02015a]">Privacy policy</a>
+              <a className="link link-hover text-black hover:text-[#02015a]">Cookie policy</a>
             </div>
           </nav>
         </footer>
         <footer className="footer flex flex-col-reverse md:flex-row justify-between items-center px-6 sm:px-12 lg:px-20 py-6">
           <aside className="text-gray-600">
-            <p className=" text[#9fa6bf] hover:text-[#02015a]">
+            <p className="text-black hover:text-[#02015a]">
               Hirevision • Copyright © {new Date().getFullYear()}
             </p>
           </aside>
           <nav className="flex">
-            <a className="link link-hover text[#9fa6bf] hover:text-[#02015a]">
+            <a className="link link-hover text-black hover:text-[#02015a]">
               <p>Terms of service</p>
             </a>
-            <a className="link link-hover text[#9fa6bf] hover:text-[#02015a]">
+            <a className="link link-hover text-black hover:text-[#02015a]">
               <p>Privacy Policy</p>
             </a>
           </nav>

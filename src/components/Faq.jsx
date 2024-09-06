@@ -9,8 +9,8 @@ function Faq() {
 
   return (
     <>
-      <div className="max-w-screen-2xl flex flex-col justify-center items-center space-y-3 md:py-32 mb-10 md:px-0 px-4 bg-white">
-        <div className="flex flex-col justify-center items-center my-8">
+      <div className="max-w-screen-2xl flex flex-col justify-center items-center  md:py-32 py-16 md:px-0 px-4 bg-white">
+        <div className="flex flex-col justify-center items-center">
           <div className="badge bg-[#fff] py-3">
             <p className="bg-gradient-to-r from-[#a15ee8] to-[#6d8dff] text-transparent bg-clip-text text-sm">
               FAQ
@@ -31,7 +31,7 @@ function Faq() {
         ].map((faq, index) => (
           <div
             key={index}
-            className={`collapse collapse-arrow bg-[#ecf1f7] md:w-[650px] w-full cursor-pointer ${
+            className={`collapse collapse-arrow bg-[#ecf1f7] md:w-[650px] w-full cursor-pointer my-2 ${
               activeIndex === index ? "collapse-open" : "collapse-close"
             }`}
             onClick={() => toggleCollapse(index)}
@@ -40,7 +40,7 @@ function Faq() {
               {faq.title}
             </div>
             <div className="collapse-content">
-              <p className="text-[16px] text-[#5b637e]">{faq.content}</p>
+              <p className="md:text-[16px] text-[20px] text-[#5b637e]">{faq.content}</p>
             </div>
           </div>
         ))}
