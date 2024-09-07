@@ -49,15 +49,15 @@ function Hero() {
         </div>
         {/* Hero Section */}
         <div className="min-h-screen relative flex flex-col justify-center items-center space-y-10 bg-[#f3f7fb]">
-          <div className="sm:mt-36 mt-24">
+          {/* <div className="sm:mt-36 mt-24">
             <button className="btn rounded-full bg-[#f8fafd] text-primary">
               <div className="badge bg-[#eaf2ff] py-3 text-primary text-sm">
                 New
               </div>
               Create teams in Organisation  <FaArrowRightLong />
             </button>
-          </div>
-          <div className="sm:w-1/2 text-center px-4 sm:px-0">
+          </div> */}
+          <div className="sm:w-1/2 text-center px-4 sm:px-0 mt-32">
             <h1 className="sm:text-[60px] text-[45px] text-[#02015a] font-bold">
               Boost your hiring process with AI solution
             </h1>
@@ -114,7 +114,7 @@ function Hero() {
         </div>
         <Slider />
       </div>
-      <Crousal />
+      {/* <Crousal /> */}
       <FeatureCard />
       <Box />
       <div className="py-20 bg-white">

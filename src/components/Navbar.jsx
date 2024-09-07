@@ -172,7 +172,6 @@ function Navbar() {
         </div>
         <div className="hidden lg:flex navbar-end justify-end w-full">
           <a
-            href="https://andrea-montini.lemonsqueezy.com/buy/f4da987f-2be5-4c3c-b2b2-9a5df3121631?discount=0"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -187,7 +186,7 @@ function Navbar() {
               }`}
             >
               <p className="group-hover:-translate-x-1 duration-300 text-lg">
-                Duplicate in Framer
+                Let's Talk
               </p>
               <MdArrowOutward className="text-[20px] sm:text-[22px] group-hover:translate-x-1 duration-300" />
             </button>

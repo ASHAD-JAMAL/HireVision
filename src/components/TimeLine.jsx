@@ -19,7 +19,7 @@ function TimeLine() {
             <div className="timeline-middle flex justify-center items-center h-12 w-12 rounded-full border border-black">
               <p className="text-center text-black">01</p>
             </div>
-            <div className="timeline-end mb-10 bg-[#181716] text-white p-8 rounded-lg md:w-1/2">
+            <div className="timeline-end mb-10 bg-[#6fc52d] text-white p-8 rounded-lg md:w-1/2">
               <div className="text-lg text-[#837766]">iMac</div>
               iMac is a family of all-in-one Mac desktop computers designed and
               built by Apple Inc. It has been the primary part of Apple's
@@ -33,7 +33,7 @@ function TimeLine() {
             <div className="timeline-middle flex justify-center items-center h-12 w-12 rounded-full border border-black">
               <p className="text-center text-black">02</p>
             </div>
-            <div className="timeline-start mb-10 bg-[#181716] text-white p-8 rounded-lg md:w-1/2">
+            <div className="timeline-start mb-10 bg-[#000000] text-white p-8 rounded-lg md:w-1/2">
               <div className="text-lg text-[#837766]">iPod</div>
               The iPod is a discontinued series of portable media players and
               multi-purpose mobile devices designed and marketed by Apple Inc.

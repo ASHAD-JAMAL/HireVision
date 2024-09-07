@@ -79,7 +79,7 @@ function FeatureCard() {
                 candidates first.
               </p>
               <div className="w-fit mt-8">
-                <Link to="https://andrea-montini.lemonsqueezy.com/buy/f4da987f-2be5-4c3c-b2b2-9a5df3121631?discount=0">
+                <Link to="#">
                   <button className="flex md:text-lg text-sm px-4 sm:px-5 py-2 sm:py-3 border border-[#573cff] hover:border-none  text-[#573cff] bg-white hover:bg-[#573cff] hover:text-white rounded-lg hover:duration-1000 items-center gap-3 group">
                     <p className="group-hover:-translate-x-1 duration-300">
                       Request Demo
