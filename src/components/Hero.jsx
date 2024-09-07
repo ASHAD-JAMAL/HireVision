@@ -12,6 +12,9 @@ import blog1 from "../assets/blog1.avif";
 import blog2 from "../assets/blog2.avif";
 import blog3 from "../assets/blog3.avif";
 import TimeLine from "./TimeLine";
+import { MdArrowOutward } from "react-icons/md";
+import { FaArrowRightLong } from "react-icons/fa6";
+
 
 const items = [
   {
@@ -51,7 +54,7 @@ function Hero() {
               <div className="badge bg-[#eaf2ff] py-3 text-primary text-sm">
                 New
               </div>
-              Create teams in Organisation →
+              Create teams in Organisation  <FaArrowRightLong />
             </button>
           </div>
           <div className="sm:w-1/2 text-center px-4 sm:px-0">
@@ -99,9 +102,14 @@ function Hero() {
             <button className="px-5 py-3 text-[16px] text-[rgb(87,60,255)] border border-[rgb(87,60,255)] rounded-lg hover:bg-[rgb(87,60,255)] hover:text-white duration-300">
               Learn More
             </button>
-            <button className="text-[16px] px-5 py-3 text-white font-semi-bold bg-[#573cff] hover:bg-[rgb(0,0,254)] hover:text-[18px] rounded-lg duration-300">
-              Request Demo <span className="text-[18px]">↗</span>
-            </button>
+            <div className="w-fit mx-auto">
+              <button className="flex md:text-lg text-sm px-4 sm:px-5 py-2 sm:py-3 border border-[rgb(0,0,254)] text-white bg-[rgb(0,0,254)] rounded-lg hover:duration-300 items-center gap-3 group">
+                <p className="group-hover:-translate-x-1 duration-300">
+                  Request Demo
+                </p>
+                <MdArrowOutward className="text-[20px] sm:text-[22px] group-hover:translate-x-1 duration-300" />
+              </button>
+            </div>
           </div>
         </div>
         <Slider />
@@ -144,7 +152,7 @@ function Hero() {
         </div>
       </div>
       <Testimonal />
-      <TimeLine/>
+      <TimeLine />
       <Faq />
       <div>
         <div className="flex flex-col justify-center items-center mt-10">

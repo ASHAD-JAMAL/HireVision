@@ -177,7 +177,7 @@ function Navbar() {
             rel="noopener noreferrer"
           >
             <button
-              className={`flex items-center px-5 py-3 border rounded-lg text-[15px] duration-300 ${
+              className={`flex items-center px-5 py-3 border rounded-lg text-[15px] duration-300 group ${
                 location.pathname === "/blog" ||
                 location.pathname === "/contact"
                   ? "border-blue-900 text-blue-900 hover:bg-blue-900 hover:text-white"
@@ -196,11 +196,15 @@ function Navbar() {
         <div className="md:ml-4">
           <label className="swap swap-rotate">
             {/* this hidden checkbox controls the state */}
-            <input type="checkbox" />
+            <input
+              type="checkbox"
+              className="theme-controller"
+              value="synthwave"
+            />
 
             {/* sun icon */}
             <svg
-              className="swap-on h-10 w-10 fill-current"
+              className="swap-off h-8 w-8 fill-current text-black md:text-white"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
               onClick={() => setTheme(theme === "light" ? "dark" : "light")}
@@ -210,7 +214,7 @@ function Navbar() {
 
             {/* moon icon */}
             <svg
-              className="swap-off h-10 w-10 fill-current"
+              className="swap-on h-8 w-8 fill-current text-black md:text-white"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
               onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
