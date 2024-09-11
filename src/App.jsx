@@ -11,7 +11,7 @@ function App() {
   return (
     <>
       <ScrollToTop />
-      <div className="dark:bg-slate-900 dark:text-white">
+      <div className="">
         <Routes>
           <Route path="" element={<Hero />} />
           <Route path="/feature" element={<Feature />} />

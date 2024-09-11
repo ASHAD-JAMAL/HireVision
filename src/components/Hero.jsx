@@ -114,7 +114,7 @@ function Hero() {
         </div>
         <Slider />
       </div>
-      {/* <Crousal /> */}
+      <Crousal />
       <FeatureCard />
       <Box />
       <div className="py-20 bg-white">
